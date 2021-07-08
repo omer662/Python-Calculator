@@ -84,8 +84,8 @@ button_2 = Button(calc, text="2", padx=40, pady=20, command=lambda: add_input("2
 button_2.grid(row=4, column=1)
 button_3 = Button(calc, text="3", padx=40, pady=20, command=lambda: add_input("3"))
 button_3.grid(row=4, column=2)
-bc_button = Button(calc, text="<", padx=39, pady=20, command=lambda: add_input("bc"))
-bc_button.grid(row=4, column=3)
+backspace_button = Button(calc, text="<-", padx=36, pady=20, command=lambda: add_input("bc"))
+backspace_button.grid(row=4, column=3)
 
 button_0 = Button(calc, text="0", padx=40, pady=20, command=lambda: add_input("0"))
 button_0.grid(row=5, column=0)
@@ -95,7 +95,5 @@ equal_button = Button(calc, text="=", padx=39, pady=20, command=calculate)
 equal_button.grid(row=5, column=2)
 clear_button = Button(calc, text="C", padx=39, pady=20, command=clear)
 clear_button.grid(row=5, column=3)
-backspace_button = Button(calc, text="<-", padx=38, pady=20, command=lambda: entry_line.delete(END))
-backspace_button.grid(row=1, column=0)
 
 calc.mainloop()
